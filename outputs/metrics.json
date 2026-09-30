@@ -1,0 +1,59 @@
+{
+  "SARIMA": {
+    "MAE": 68520.67,
+    "RMSE": 74796.84,
+    "MAPE": 54.11,
+    "R2": -6.9099,
+    "order": "SARIMA(1,1,1)(1,1,1)[12]"
+  },
+  "Random_Forest": {
+    "MAE": 25831.82,
+    "RMSE": 33180.81,
+    "MAPE": 20.21,
+    "R2": -0.5566,
+    "CV_R2_mean": -0.4577,
+    "CV_R2_std": 2.5328,
+    "CV_MAE_mean": 17569.05,
+    "n_estimators": 300,
+    "max_depth": 12
+  },
+  "Gradient_Boosting": {
+    "MAE": 24368.59,
+    "RMSE": 31236.07,
+    "MAPE": 19.11,
+    "R2": -0.3795,
+    "CV_R2_mean": -0.3977,
+    "CV_R2_std": 2.414,
+    "CV_MAE_mean": 17164.87,
+    "n_estimators": 400,
+    "learning_rate": 0.05,
+    "max_depth": 4
+  },
+  "dataset": {
+    "n_obs": 168,
+    "date_range": "2010-01 to 2023-12",
+    "train_size": 132,
+    "test_size": 24,
+    "n_features": 14
+  },
+  "adf_test": {
+    "original_stat": -4.0083,
+    "original_pvalue": 0.0014,
+    "diff12_stat": -2.9659,
+    "diff12_pvalue": 0.0382
+  },
+  "top_features_rf": {
+    "covid_shock": 0.5959,
+    "arrivals_lag12": 0.3109,
+    "arrivals_lag1": 0.0772,
+    "arrivals_roll3": 0.003,
+    "cpi": 0.0022
+  },
+  "top_features_gb": {
+    "covid_shock": 0.6241,
+    "arrivals_lag12": 0.2924,
+    "arrivals_lag1": 0.0572,
+    "exchange_rate": 0.0043,
+    "month_cos": 0.004
+  }
+}
